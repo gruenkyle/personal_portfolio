@@ -64,6 +64,7 @@ h2{
     align-items: center;
     padding: .5rem 10%; 
 
+    top: 0; 
     width: 100%;
     transition: 0.4s;
 }
@@ -103,10 +104,33 @@ h2{
 /* Hidden Hamburger Menu */ 
 
 
+/* Center Container */
+#center-container{
+    background-image:url(./images/backgroundIMG.jpg);
+    height: 85vh; 
+    background-size: cover; 
+    background-position: center; 
+
+    display: flex; 
+    flex-direction: column; 
+    flex: 1; 
+    justify-content: center; 
+    align-content: center; 
+    padding: 1.5rem; 
+}
+
+#center-container p,h3, 
+
+.centerText{
+    margin-right: auto; 
+    padding: 1.5rem;
+}
+
 /* Transitional Material */
 @media screen and (max-width:1024px){
     #header-navbar{
         transition: 0.2s;
+        position: normal; 
     }
     .nav_links_left{
         display: none;
