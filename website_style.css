@@ -106,8 +106,8 @@ h2{
 
 /* Center Container */
 #center-container{
-    background-image:url(./images/backgroundIMG.jpg);
-    height: 85vh; 
+    background-image:url(./images/fadedBackground.jpg);
+    height: 93vh; 
     background-size: cover; 
     background-position: center; 
 
@@ -117,17 +117,49 @@ h2{
     justify-content: center; 
     align-content: center; 
     padding: 1.5rem; 
+
 }
 
-#center-container p,h3, 
+#center-container p, h3, h2{
+    margin-right: auto;
+}
+
+#center-container p {
+    font-family: "Noto Sans Thai", sans-serif; 
+    font-size: 1.25rem;
+}
+
+#center-container h2 {
+    font-family: "Noto Sans Thai", sans-serif; 
+    font-size: 2rem;
+}
+
+#center-container h3 {
+    margin-top: 4rem;
+    font-family: "Noto Sans Thai", sans-serif; 
+    font-size: 1.25rem;
+}
 
 .centerText{
-    margin-right: auto; 
-    padding: 1.5rem;
+    padding-left: 15rem;
+}
+
+.ExploreMe{
+    cursor: pointer;
+    
+    text-decoration: underline;
+}
+
+/* Link Containers */
+
+#selection-box{
+    background-color: #3a5a40;
+    height: 60vh; 
 }
 
 /* Transitional Material */
 @media screen and (max-width:1024px){
+
     #header-navbar{
         transition: 0.2s;
         position: normal; 
@@ -138,5 +170,13 @@ h2{
 
     .checkbox{
         display: contents;  
+    }
+
+    .centerText{
+        padding-left:3rem;
+    }
+
+    #selection-box{
+        height: 90vh;
     }
 }
