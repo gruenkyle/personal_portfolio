@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0; 
+    border: 0px solid #ff0000; 
+
+}
+
+body{
+    margin: 0;
+    font-family: "Noto Sans Thai", sans-serif;
+    font-weight: 300;
+    font-size: 1rem; 
+    color: whitesmoke; 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+li, a{
+    font-family: "Noto Sans Thai", sans-serif; 
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: whitesmoke; 
+    text-decoration: none;
+}
+
+h2{
+    font-family: "Noto Sans Thai", sans-serif; 
+    font-weight: bold;
+    font-size: 2rem;
+    color: whitesmoke; 
+}
+
+/*Hamburger Menu Container */
+.checkbox{
+    display: none;
+    cursor: pointer;
+}
+
+.hamburgerlines div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-style: bold;
+    flex-direction: column;
+
+    width: 40px; 
+    height: 7px; 
+    background-color: whitesmoke;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Navagation Bar Container */
+
+#header-navbar {
+    background-color: #344E41;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 10%; 
+
+    width: 100%;
+    transition: 0.4s;
+}
+
+/* Standard Logo CSS */
+.logo_center{
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* Standard Nav Bar CSS */
+
+.nav_links_left {
+    list-style: none;
+    text-decoration: none;
+    border: 0px solid white; 
+    margin-right: auto; 
+}
+
+.nav_links_left li {
+    display: inline-block;
+    padding: 0px 2rem;
+}
+
+.nav_links_left li a {
+    transition: all 0.3s ease 0s; 
+}
+
+.nav_links_left li a:hover {
+    color: #d5dacd;
+}
+
+.nav_links_left li a.active{
+    text-decoration: underline;
+}
+
+/* Hidden Hamburger Menu */ 
+
+
+/* Transitional Material */
+@media screen and (max-width:1024px){
+    #header-navbar{
+        transition: 0.2s;
+    }
+    .nav_links_left{
+        display: none;
+    }
+
+    .checkbox{
+        display: contents;  
+    }
+}
