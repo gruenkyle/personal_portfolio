@@ -146,15 +146,50 @@ h2{
 
 .ExploreMe{
     cursor: pointer;
-    
-    text-decoration: underline;
 }
 
-/* Link Containers */
+/* Link Tiles */
 
-#selection-box{
+#explore-tiles{
+    border: 1px solid #ff0000;
     background-color: #3a5a40;
-    height: 60vh; 
+
+    display: flex; 
+    justify-content: space-evenly;
+
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.photo_tiles{
+    border: 1px solid #ff0000;
+    display: flex; 
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.photo_tiles img{
+    padding: 1rem;
+}
+
+.thumbnail{
+    top:-1rem;
+    left: -1rem; 
+    display: block; 
+    z-index: 999;
+    cursor: pointer;
+
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+
+}
+
+.thumbnail:hover{
+    transform: scale(1.05);
+    filter: brightness(70%)
+
 }
 
 /* Transitional Material */
@@ -178,5 +213,9 @@ h2{
 
     #selection-box{
         height: 90vh;
+    }
+
+    .photo_tiles{
+        flex-direction: column; 
     }
 }

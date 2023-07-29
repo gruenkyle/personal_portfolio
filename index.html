@@ -36,18 +36,33 @@
             <div class="centerText">            
                 <div class="overlayText">
                     <h2>Welcome To My Portfolio</h2>
-                    <p>This website is an almalgamation of my passions and hobbies!
-                        <br>In other words, this is a collection of love letters to 
-                        <br>the things that have truly changed my life. 
+                    <p>This website is the canvas where my passion for
+                        <br>Photography, Programming, and Exploring Life
+                        <br>combine to create a beautiful works. 
                     </p>
                 </div>
-                <div class="ExploreMe">
-                    <h3>Explore More Below</h3>
+                <div class="ExploreMe" onClick="scrolldiv()">
+                    <h3>Explore More Below &nbsp; &#8711;</h3>
                 </div>
             </div>
         </header>
         <header id="selection-box">
-            
+            <div id="explore-tiles">
+                <div class="photo_tiles">
+                    <img src="images/photographyTile.png" alt="Photography Tile"
+                    style="width: 600px; height:600px; object-fit: cover;" class="thumbnail">
+                    <img src="images/programmingTile.png" alt="Programming Tile"
+                    style="width: 600px; height:600px; object-fit: cover;" class="thumbnail">
+                    <img src="images/aboutTile.png" alt="About Me Tile"
+                    style="width: 600px; height:600px; object-fit: cover;" class="thumbnail">
+                </div>
+            </div>
         </header>
+        <script>
+            function scrolldiv(){
+                var elem=document.getElementById("explore-tiles");
+                elem.scrollIntoView();
+            }
+        </script>
     </body>
 </html>
