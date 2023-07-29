@@ -14,13 +14,14 @@ body{
     font-weight: 300;
     font-size: 1rem; 
     color: whitesmoke; 
+    min-height: 100%;
 }
 
 html{
     scroll-behavior: smooth;
 }
 
-li, a{
+li, a, footer, h3, h1{
     font-family: "Noto Sans Thai", sans-serif; 
     font-weight: 300;
     font-size: 1.5rem;
@@ -150,8 +151,15 @@ h2{
 
 /* Link Tiles */
 
+#selection-box{
+    border: 0px solid greenyellow;
+    background-color: #3a5a40;
+    width: 100%;
+    height: max-content;
+}
+
 #explore-tiles{
-    border: 1px solid #ff0000;
+    border: 0px solid #ff0000;
     background-color: #3a5a40;
 
     display: flex; 
@@ -162,7 +170,7 @@ h2{
 }
 
 .photo_tiles{
-    border: 1px solid #ff0000;
+    border: 0px solid #ff0000;
     display: flex; 
     justify-content: center;
     justify-content: space-around;
@@ -192,6 +200,58 @@ h2{
 
 }
 
+/* Footer CSS */
+
+footer{
+    border: 0px solid red;
+    background-color: #588157;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h3{
+    font-style: bold;
+    font-size: 2rem;
+}
+
+footer p{
+    font-style: italic;
+    font-size: 1rem;
+}
+
+#footer-box{
+    border: 0px solid red;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_text{
+    border: 0px solid red;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1rem;
+
+}
+
+.footer_icons{
+    border: 0px solid red;
+    display: flex; 
+    justify-content: space-between; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Transitional Material */
 @media screen and (max-width:1024px){
 
@@ -212,7 +272,7 @@ h2{
     }
 
     #selection-box{
-        height: 90vh;
+        height: 100%;
     }
 
     .photo_tiles{
