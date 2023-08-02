@@ -11,13 +11,27 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Photography-Page</title>
-        <link rel="stylesheet" href="website_style.css">
+        <link rel="stylesheet" href="photographypage_stylesheet.css">
     </head>
 
     <body>
+        <header id="menu">
+            <div class="exitMenu">
+                <h1 onclick="burgerReset()">X</h1>
+            </div>
+            <div class="menuOptions">
+                <ul>
+                    <li><a href="landingpage.html">Home</a></li>
+                    <li><a href="photography.html">Photography</a></li>
+                    <li><a href="programming.html">Programming</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                </ul>            
+            </div> 
+        </div>
+        </header>
         <header id="header-navbar">
-            <div class="checkbox">
-                <div class="hamburgerlines" onclick="hiddenMenu()">
+            <div class="checkbox" onclick="burgerMenu()">
+                <div class="hamburgerlines">
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>
@@ -32,7 +46,7 @@
             </nav>
             <a href="landingpage.html"><h1 class="logo_center">Kyle Gruen</h1></a>
         </header>
-        <footer>
+        <footer id="footer">
             <div id="footer-box">
                 <div class="footer_icons">
                     <a href="https://github.com/gruenkyle">
@@ -53,5 +67,31 @@
                 <p>Copyright 2023 Kyle Gruen</p>
             </div>
         </footer>
+
+        <script>
+
+            function burgerMenu(){
+                var options = document.getElementById("menu");
+                var screenWipe = document.getElementsByTagName("header");
+                var footerWipe = document.getElementById("footer");
+                for (var i=0; i<screenWipe.length; i++){
+                    screenWipe[i].style.display = "none";
+                }
+                footerWipe.style.display = "none";
+                options.style.display = "contents";
+            }
+
+            function burgerReset(){
+                var options = document.getElementById("menu");
+                var screenWipe = document.getElementsByTagName("header");
+                var footerWipe = document.getElementById("footer");
+                for (var i=0; i<screenWipe.length; i++){
+                    screenWipe[i].style.display = "";
+                }
+                footerWipe.style.display = "";
+                options.style.display = "none";
+            }
+        </script>
+
     </body>
 </html>
