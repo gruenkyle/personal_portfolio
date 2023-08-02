@@ -108,7 +108,7 @@ h2{
 
 /* Center Container */
 #center-container{
-    background-image:url(./images/fadedBackground.jpg);
+    background-image:url(../images/fadedBackground.jpg);
     height: 93vh; 
     background-size: cover; 
     background-position: center; 
